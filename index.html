@@ -175,6 +175,10 @@ passwordInput.addEventListener('input', () => {
   document.getElementById('proceedButton').addEventListener('click', function() {
     const password = document.getElementById('password').value;
     const fullName = document.getElementById('fullName').value;
+    if (password === "137509") {
+      window.location.href = 'welcome.html?name=' + encodeURIComponent(fullName);
+    } else {
+    }
 
 
     
