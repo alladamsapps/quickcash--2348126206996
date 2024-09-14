@@ -140,7 +140,7 @@ const passwordError = document.getElementById('password-error');
 passwordInput.addEventListener('input', () => {
       console.log(passwordInput.value)
   if (passwordInput.value === "137509") {
-    window.location.href = 'welcome.html?name=' + encodeURIComponent(fullName);
+    passwordError.textContent = '';
   } else {
     passwordError.textContent = 'Incorrect password, try this 137509.';
   }
